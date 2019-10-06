@@ -191,3 +191,40 @@
     margin-top: 7px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .main-nav,
+  .project-nav {
+    .nav {
+      color: $gray-lightest;
+    }
+  }
+  .navbar-default {
+    background-color:$gray-darkest;
+    border-color: $gray-dark;
+    .nav {
+      > .open {
+        > a, > a:hover {
+          background-color: $gray;
+          color: $gray-lightest;
+        }
+      }
+      > li {
+        > div,
+        > a {
+          color: $gray-lightest;
+        }
+        > a  {
+          &:hover, &:focus {
+            background-color: $gray-dark;
+          }
+  
+          &.active {
+            background-color: $gray-darker;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

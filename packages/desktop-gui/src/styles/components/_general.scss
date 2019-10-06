@@ -97,7 +97,7 @@ i.timedOut { color: #F5A327;}
 .form-horizontal {
   margin-bottom: 25px;
 
-  background-color: #fafafa;
+  background-color: $gray-lightest;
   border: 1px solid #eee;
   padding: 15px 25px;
 
@@ -134,5 +134,33 @@ pre.line-nums {
       margin-right: .5em;
       color: #696c6d;
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #app {
+    background: $gray-darker;
+  }
+
+  .helper-line {
+    & > span {
+      &:before,
+      &:after {
+        border-bottom: 1px solid #121212;
+      }
+    }
+  }
+
+  .form-horizontal {
+    background-color: $gray-darkest;
+    border: 1px solid #121212;
+  
+    .empty-well {
+      background-color: $gray-darkest;
+    }
+  }
+
+  .text-muted {
+    color: $gray-lighter;
   }
 }

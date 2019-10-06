@@ -86,7 +86,7 @@
       color: #ccc;
     }
 
-    .comma, .colon, {
+    .comma, .colon {
       color: #ccc;
     }
 
@@ -247,5 +247,18 @@
 
   td, th {
     padding: 3px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .settings .config-vars {
+    border: 1px solid $gray-dark;
+  }
+  .settings-wrapper .rc-collapse-item:first-child {
+    border-top: 1px solid #121212;
+  }
+  .config-table {
+    border-top: 1px solid $gray-dark;
+    border-bottom: 1px solid $gray-dark;
   }
 }

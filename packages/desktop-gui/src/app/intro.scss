@@ -201,3 +201,34 @@
     top: 15px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .intro {
+    h1 {
+      color: $gray-lightest;
+    }
+  }
+
+  .project-drop {
+    background: $gray-dark;
+    border: dashed 2px $gray-darker;
+
+    p {
+      color: #ffffff;
+    }
+  
+    &.is-dragging-over {
+      background: $gray;
+      border: 2px solid lighten($gray, 30%);
+    }
+  }
+
+  .projects-list {
+    .project-name {
+      color: #ffffff;
+    }
+    .project-path {
+      color: $gray-light;
+    }
+  }
+}

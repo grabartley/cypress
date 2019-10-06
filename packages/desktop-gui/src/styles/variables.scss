@@ -53,3 +53,15 @@ $font-mono: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 $font-title: "Fira Sans", font-sans;
 $font-size: 16px;
 $line-height: 1.7em;
+
+// Grays
+$gray-lightest:                                #fafafa;
+$gray-lighter:                                 #f5f5f5;
+$gray-light:                                   #bdbdbd;
+$gray:                                         #757575;
+$gray-dark:                                    #616161;
+$gray-darker:                                  #424242;
+$gray-darkest:                                 #212121;
+
+// Dark color scheme
+$dark-modal-content-bg:                        $gray-darker !default;

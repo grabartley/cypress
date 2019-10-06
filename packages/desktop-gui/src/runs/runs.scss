@@ -45,7 +45,7 @@
   .alert {
     border-radius: 3px;
     border: 1px solid #eee;
-    background-color: #f5f5f5;
+    background-color: $gray-lighter;
     color: #777;
     margin-bottom: 0;
 
@@ -537,5 +537,14 @@
     float: left;
     width: 205px;
     margin-top: 20px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .empty-no-api-server em {
+    color: $gray-lightest;
+  }
+  .setup-project-modal .well {
+    background-color: $gray-dark;
   }
 }

@@ -114,3 +114,15 @@
     font-family: $font-mono;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .login > p {
+    color: #888;
+  }
+  .login-content .message {
+    color: #888;
+  }
+  .login-no-api-server em {
+      color: $gray-lightest;
+  }
+}

@@ -14,7 +14,7 @@ $max-nesting-level: 14;
 
   header {
     height: 42px;
-    background: #f5f5f5;
+    background: $gray-lighter;
     border-bottom: 1px solid #ddd;
   }
 
@@ -30,7 +30,7 @@ $max-nesting-level: 14;
       left: 22px;
       top: 47%;
       max-width: 100%;
-      color: #757575;
+      color: $gray;
       transform: translate(0, -50%);
     }
 
@@ -57,14 +57,14 @@ $max-nesting-level: 14;
       width: 100%;
       height: 26px;
       line-height: 30px;
-      background-color: #f5f5f5;
+      background-color: $gray-lighter;
       transition: border-color 0.25s ease;
 
       &:focus {
         outline: none;
         border-bottom: 2px solid #ddd;
         box-shadow: none;
-        background-color: #f5f5f5;
+        background-color: $gray-lighter;
       }
     }
   }
@@ -206,6 +206,70 @@ $max-nesting-level: 14;
       @include responsive-width(25%);
       text-align: right;
       color: #bdc0c5;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .specs {
+    header {
+      background: $gray-darker;
+    }
+
+    .search {
+      label {
+        color: #ffffff;
+      }
+  
+      .clear-filter {
+        color: #ffffff;
+      }
+
+      .filter {
+        color: #ffffff;
+        background-color: $gray-darker;
+  
+        &:focus {
+          background-color: $gray-dark;
+        }
+      }
+    }
+
+    .all-tests {
+      color: $gray-darker;
+  
+      &:hover, &:focus {
+        color: $gray-darker;
+      }
+    }
+
+    .folder {
+      color: $gray-lightest;
+
+      &.level-0 > div > .folder-name {
+        background-color: $gray-dark;
+        color: #ffffff;
+      }
+    }
+
+    .file > a {
+      border-bottom: 1px dotted $gray-dark;
+      color: $gray-lightest;
+  
+      &.active {
+        background-color: $gray-dark;
+        color: #ffffff;
+  
+        &:hover {
+          background-color: $gray-dark;
+  
+        }
+      }
+  
+      &:hover, &:focus {
+        background-color: $gray-dark;
+        color: #ffffff;
+      }
     }
   }
 }

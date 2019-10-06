@@ -52,7 +52,7 @@
     &:focus,
     &:active {
       cursor: pointer;
-      background-color: #f5f5f5;
+      background-color: $gray-lighter;
       color: #262626;
     }
 
@@ -64,6 +64,25 @@
       line-height: 1.8;
       padding: 3px 20px;
       white-space: nowrap;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dropdown-menu {
+    background-color: $gray-darker;
+
+    li {
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $gray-dark;
+        color: #ffffff;
+      }
+
+      & > span, & > a {
+        color: $gray-lightest;
+      }
     }
   }
 }

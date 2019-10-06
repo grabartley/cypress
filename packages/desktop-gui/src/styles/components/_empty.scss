@@ -44,3 +44,9 @@
     color: #b91942;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .empty-well {
+    background-color: $gray-darker;
+  }
+}

@@ -61,7 +61,7 @@ legend {
 }
 
 code {
-  background-color: #f5f5f5;
+  background-color: $gray-lighter;
   color: #555;
   font-family: $font-mono;
   border: 1px solid #ddd;
@@ -69,4 +69,15 @@ code {
 
 pre code {
   border: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    color: #ffffff;
+  }
+  code {
+    background-color: $gray-darker;
+    color: $gray-lightest;
+    border: 1px solid $gray-dark;
+  }
 }

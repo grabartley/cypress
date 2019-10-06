@@ -5,3 +5,10 @@
   background-color: $light-gray;
   margin-bottom: 0;
 }
+
+@media (prefers-color-scheme: dark) {
+  .well {
+    border: 1px solid $gray-darker;
+    background-color: $gray-dark;
+  }
+}
