@@ -63,5 +63,7 @@ $gray-dark:                                    #616161;
 $gray-darker:                                  #424242;
 $gray-darkest:                                 #212121;
 
-// Dark color scheme
-$dark-modal-content-bg:                        $gray-darker !default;
+@media (prefers-color-scheme: dark) {
+  //** Background color of modal content area
+  $modal-content-bg:                           $gray-darker !default;
+}
